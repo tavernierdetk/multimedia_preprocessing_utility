@@ -1,0 +1,55 @@
+{
+  "channel_name": "AssNat-TV-Q1492249",
+  "programs": {
+    "sessions_parlementaire": {
+      "speaker_candidates": {
+        "file_name": "MNAs.json"
+      },
+      "components_pipeline": [
+        {
+          "component_name": "initializer",
+          "component_params": {
+            "silence_duration": 500,
+            "silence_threshold": -48
+          }
+        },
+        {
+          "component_name": "silence_segmenter",
+          "component_params": {
+            "silence_duration": 500,
+            "silence_threshold": -48
+          }
+        }
+      ],
+      "language": "fr",
+      "layouts": {
+        "default": {
+          "name_and_riding": [
+            0,
+            272,
+            489,
+            288
+          ],
+          "party": [
+            732,
+            409,
+            787,
+            435
+          ],
+          "title": [
+            0,
+            435,
+            960,
+            526
+          ],
+          "topic": [
+            732,
+            380,
+            960,
+            409
+          ]
+        }
+      }
+    }
+  }
+}
